@@ -31,7 +31,7 @@
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" id="primeiro-paciente">
 							<td class="info-nome">Paulo</td>
-							<td class="info-peso">100</td>
+							<td class="info-peso">10000</td>
 							<td class="info-altura">2.00</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
@@ -56,7 +56,7 @@
 						<tr class="paciente">
 							<td class="info-nome">Douglas</td>
 							<td class="info-peso">85</td>
-							<td class="info-altura">1.73</td>
+							<td class="info-altura">-1.73</td>
 							<td class="info-gordura">24</td>
 							<td class="info-imc">0</td>
 						</tr>
@@ -75,6 +75,9 @@
 
 		<section class="container">
 		    <h2 id="titulo-form">Adicionar novo paciente</h2>
+			<ul id="mensagens-erro" >
+				<li></li>
+			</ul>
 		    <form id="form-adiciona">
 		        <div class="grupo">
 		            <label for="nome">Nome:</label>
@@ -96,6 +99,10 @@
 		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
 		    </form>
 		</section>
+
+		<div>
+			<p id="teste">Testando campo</p>
+		</div>
 
 		<script src="js/calcula-imc.js" ></script>
 		<script src="js/form.js" ></script>
